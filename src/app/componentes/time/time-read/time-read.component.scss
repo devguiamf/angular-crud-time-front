@@ -1,0 +1,36 @@
+.container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardTime{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.subtitle{
+    padding-top: 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+.editar{
+    margin-right: 35px;
+    background-color: #277BC0;
+}
+
+div.container p{
+    color: chocolate;
+}
+
+div.container span{
+    color: #fff;
+    margin-left:5px;
+}
+
+

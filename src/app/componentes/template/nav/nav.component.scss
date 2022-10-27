@@ -1,0 +1,51 @@
+.side-nav{
+    background-color: #424242;
+    width: 250px;
+    
+    
+}
+
+.side-nav a {
+    color: #fff;
+    font-size: 2em;
+    padding-top: 30px;
+}
+
+.side-nav i {
+    padding-left: 10px;
+    
+}
+
+
+.conta{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #fff;
+    margin: 20px 0px 0px 50px;
+    
+    
+}
+
+.content{
+    //background-color: #2C2C2C;
+    height: 100vh;
+    padding: 18px;
+    background-image: url(../../../../assets/campo.jpg);
+    background-size: 100%;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logoImg{
+    width: 120px;
+
+}
+
+hr {
+    width: 200px;
+}
+

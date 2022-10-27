@@ -1,0 +1,23 @@
+<mat-card class="mat-elevation-z10">
+    <mat-card-title >Excluir Time</mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input disabled [(ngModel)]="fut.nomeTime" name="nomeTime" matInput placeholder="Nome do time">
+        </mat-form-field>
+        <mat-form-field>
+            <input disabled [(ngModel)]="fut.nomeTec" name="nomeTec" matInput placeholder="Nome do técnico">
+        </mat-form-field>
+        <mat-form-field>
+            <input disabled [(ngModel)]="fut.jogadorEstrela" name="jogadorEstrela" matInput placeholder="Jogador estrela">
+        </mat-form-field>
+        <mat-form-field>
+            <input disabled [(ngModel)]="fut.preco" name="preco" matInput placeholder="Preço (R$)">
+        </mat-form-field>
+    </form>
+
+    
+    <button class="criar" mat-raised-button (click)="excluir()" > Excluir </button>
+    
+  
+</mat-card>

@@ -1,0 +1,31 @@
+<mat-card class="mat-elevation-z10">
+    <mat-card-title >Novo Time</mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input [(ngModel)]="timeFut.nomeTime" name="nomeTime" matInput placeholder="Nome do time">
+        </mat-form-field>
+        <mat-form-field>
+            <input [(ngModel)]="timeFut.nomeTec" name="nomeTec" matInput placeholder="Nome do técnico">
+        </mat-form-field>
+        <mat-form-field>
+            <input [(ngModel)]="timeFut.jogadorEstrela" name="jogadorEstrela" matInput placeholder="Jogador estrela">
+        </mat-form-field>
+        <mat-form-field>
+            <input [(ngModel)]="timeFut.preco" name="preco" matInput placeholder="Preço (R$)">
+        </mat-form-field>
+    </form>
+
+    <button class="criar" mat-raised-button  (click)="createTime()">
+        Salvar
+    </button>
+    
+    <button mat-raised-button color="primary" (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+
+
+
+
+

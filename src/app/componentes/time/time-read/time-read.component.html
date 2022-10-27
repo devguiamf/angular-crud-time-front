@@ -1,0 +1,17 @@
+<div class="container">
+    <mat-card class="cardTime mat-elevation-z10" *ngFor="let time of times">
+        <mat-card-title class="title">{{time.nomeTime}}</mat-card-title>
+        <hr>
+        <mat-card-subtitle class="subtitle">
+            <p>Técnico: <span>{{time.nomeTec}}</span></p>
+            <p>Jogador Estrela: <span>{{time.jogadorEstrela}}</span></p>
+            <p>Preço do time: <span>{{time.preco | currency : 'BRL' }}</span></p>        
+        </mat-card-subtitle>
+        <button class="editar" mat-raised-button routerLink="/times/update/{{time.id}}" >
+            Editar
+        </button>        
+        <button mat-raised-button color="primary" routerLink="/times/delete/{{time.id}}">
+            Excluir
+        </button>
+    </mat-card>
+</div>
