@@ -25,7 +25,7 @@ export class TimeCreateComponent implements OnInit {
 
   createTime(): void{
     this.timeService.create(this.timeFut).subscribe(() => {
-      this.timeService.showMessage('Operação executada com sucesso')
+      this.timeService.showMessage('Time criado com sucesso')
       this.router.navigate(['/times'])
     })
     

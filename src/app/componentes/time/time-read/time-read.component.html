@@ -1,11 +1,11 @@
 <div class="container">
     <mat-card class="cardTime mat-elevation-z10" *ngFor="let time of times">
         <mat-card-title class="title">{{time.nomeTime}}</mat-card-title>
-        <hr>
+        <hr *ngIf="time.nomeTime">
         <mat-card-subtitle class="subtitle">
-            <p>Técnico: <span>{{time.nomeTec}}</span></p>
-            <p>Jogador Estrela: <span>{{time.jogadorEstrela}}</span></p>
-            <p>Preço do time: <span>{{time.preco | currency : 'BRL' }}</span></p>        
+            <p *ngIf="time.nomeTec" >Técnico: <span>{{time.nomeTec}}</span></p>
+            <p  *ngIf="time.jogadorEstrela">Jogador Estrela: <span>{{time.jogadorEstrela}}</span></p>
+            <p  *ngIf="time.preco">Preço do time: <span>{{time.preco | currency : 'BRL' }}</span></p>        
         </mat-card-subtitle>
         <button class="editar" mat-raised-button routerLink="/times/update/{{time.id}}" >
             Editar
